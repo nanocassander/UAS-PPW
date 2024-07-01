@@ -1,0 +1,222 @@
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color:#798777;
+    height: 76px;
+    width: 100%;
+    z-index: 95;
+    color: #ffffff;
+}
+
+header .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .title {
+    line-height: 76px;
+    text-align: center;
+    vertical-align:middle;
+    color: var(--app-header-text-color);
+    text-decoration: none;
+}
+
+header .title h1 {
+    color: var(--app-header-text-color);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 76px;
+    margin-left: 5px;
+}
+
+nav {
+    transition: all 0.25s ease-out;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 76px;
+}
+
+nav ul li a, .navbar i {
+    color: var(--app-header-menu-text-color);
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    transition: all 0.25s ease-in-out;
+    padding-left: 10px;
+    padding-right: 10px;
+        
+}
+
+.navbar i {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 76px;
+}
+
+nav ul li a:hover { 
+    color: #ecd100;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.h-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #000000;
+    position: relative;
+    top: -100px; /* Mulai dari luar layar atas */
+    opacity: 0; /* Mulai dengan opacity 0 */
+    animation: slideIn 0.5s ease-out forwards; /* Animasi slideIn selama 0.5 detik */
+    }
+
+    @keyframes slideIn {
+        to {
+            top: 0; /* Posisi akhir, berada di 0px dari atas */
+            opacity: 1; /* Akhirnya opacity menjadi 1 */
+        }
+    
+}
+
+hr{ 
+    border: 0;
+    height: 3px;
+    background-color: #000000;
+    margin: 1px;
+}
+
+/* Card Styling */
+.card , .card1 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-img-top {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #495057;
+}
+
+.btn-primary {
+    border-color: #000000;
+    color: #ffffff;
+    background-color: #A2B29F;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #f0f2ff;
+    color: #ecd100;
+    border-color: #000000;
+}
+
+/* Pagination Styling */
+.pagination {
+    margin-top: 20px;
+}
+
+.page-link {
+    background-color: #f0f2ff;
+    color: #000000;
+}
+
+.page-link:hover {
+    color: #ecd100;
+}
+/* Back to Top Button */
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #1e1e1a;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#backToTopBtn:hover {
+    background-color: #ffffff;
+    color: #ecd100;
+    
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .h-title {
+        font-size: 2rem;
+    }
+
+    .card-img-top {
+        max-height: 150px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.875rem;
+    }
+}
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Menggeser card ke atas saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.card1 {
+    transition: transform 0.3s ease; /* Transisi transformasi */
+}
+
+.card1:hover {
+    transform: scale(1.05); /* Skala 105% saat dihover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+
+.footer {
+    background-color: #798777;
+    color: white;
+    padding: 20px 0;
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #ffc107;
+    text-decoration: none;
+}
+
